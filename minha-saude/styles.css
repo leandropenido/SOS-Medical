@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    background: #0D2329;
+    font-family: 'Arial', sans-serif;
+}
+
+.header-page {
+    display: flex;
+    height: 8rem;
+    flex-direction: row;
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 auto;
+    padding: 0.8rem;
+
+}
+ul li a, section a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+   
+}
+
+.logo {
+    margin-left: 2rem;
+    border-radius: 6rem;
+
+}
+.navigation{
+    display:inline-flex;
+    margin: 0 auto;
+    width: 80%;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    column-gap: 2rem;
+}
+
+.navbar a:hover{
+	opacity: 0.50;
+	transition: opacity .30s ease-in-out; 
+}
+main {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0; /* Aumenta o espaço acima e abaixo */
+}
+
+.cadastro-form {
+    background-color: #1c3a3a;
+    padding: 50px; /* Aumenta o espaçamento interno*/
+    border-radius: 10px;
+    width: 500px; /* Aumenta o espaçamento interno*/
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.cadastro-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #29A3A3;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    background-color: #FFF;
+    color: black
+}
+
+.input-group input {
+    color: #000000;
+}
+
+/* Seleciona o placeholder para mudar a cor */
+.input-group input::placeholder{
+    color: #000000;
+}
+
+.input-group input, .input-group select {
+    width: 100%; /* Mantém a largura ocupando todo o espaço disponível */
+    padding: 10px; /* Aumenta a altura dos campos */
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #CCCCCC; /* Adiciona uma borda clara para contraste */
+}
+
+
+input::placeholder {
+    color: #d9d9d9;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #29A3A3;
+    color: #FFF;
+    border: roboto;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #208F8F;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    width: 100%; 
+    position: fixed; 
+    bottom: 0;  
+    left: 0; 
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    color: #6c757d;
+}
+

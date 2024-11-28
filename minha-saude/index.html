@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Medical - Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class='header-page'>
+        <div >
+            <img class=" logo" src="logo.jpg" alt="" width="100px">
+        </div>
+        <nav class='navigation'>
+            <ul class='navbar'>
+                <li><a href="../Pagina-Inicial/index.html">Início</a></li>
+                <li><a href="../Grafico/grafico.html">Gráfico</a></li>
+                <li><a href="../Pagina-de-depoimentos/dpo.html">Depoimentos</a></li>
+                <li><a href="../fale-conosco/index.html">Fale conosco</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <form class="cadastro-form" id="cadastroForm">
+            <h2> Minha Saúde</h2>
+            
+            <p style="color: white; margin-bottom: 5px;">Doenças Crônicas</p>
+            <div class="input-group">
+                <input type="text" id="tipoDoenca" placeholder="Tipo de doença" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="sintomas" placeholder="Sintomas" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="tratativa" placeholder="Tratativa" required>
+
+            </div>
+        </div>
+        <p style="color: white; margin-bottom: 5px;">Medicação</p>
+            <div class="input-group">
+                <input type="text" id="medicamento" placeholder="Nome do medicamento" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="frequencia" placeholder="Frequência">
+            </div>
+            <p style="color: white; margin-bottom: 5px;">Alergias</p>
+            <div class="input-group">
+               <input type="text" id="alergias" placeholder="Tipo de alergias">
+            </div>
+            <button id='submit' type="submit">Adicionar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright Todos os direitos reservados. Política de Privacidade</p>
+    </footer>
+
+    <script src="node.js"></script> <!-- Inclui o arquivo de JS -->
+</body>
+</html>

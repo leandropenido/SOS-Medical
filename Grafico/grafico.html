@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SOS Medical - Gráficos</title>
+    <link rel="stylesheet" href="stylegrafico.css">
+</head>
+<body>
+        <header class="header-page">
+            <div>
+                <img src="logo.jpg" alt="" class="logo" width="100px;">
+            </div>
+            <nav class="navigation">
+                <ul class="navbar">
+                    <li><a href="../Pagina-Inicial/index.html">Início</a></li>
+                    <li><a href="../Pagina-de-depoimentos/dpo.html">Depoimentos</a></li>
+                    <li><a href="../login/index.html">Login</a></li>
+                    <li><a href="../fale-conosco/index.html">Fale conosco</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <hr />
+
+    <main>
+        <section class="bloco">
+            <h2>Gráficos de Desempenho</h2>
+            <p>Abaixo estão alguns gráficos de desempenho e estatísticas dos atendimentos de emergência.</p>
+            <canvas id="chart1" class="grafico"></canvas>
+        </section>
+
+        <section class="bloco">
+            <h2>Gráficos de Frequência de Uso</h2>
+            <p>Gráficos que mostram a frequência de uso da plataforma em diferentes horários do dia.</p>
+            <canvas id="chart2" class="grafico"></canvas>
+        </section>
+    </main>
+
+    <footer>
+    <p>&copy; Copyright Todos os direitos reservados. Política de Privacidade</p>
+    </footer>
+    <script src="jsgráfico.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx1 = document.getElementById('chart1').getContext('2d');
+        const chart1 = new Chart(ctx1, {
+            type: 'line',
+            data: {
+                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
+                datasets: [{
+                    label: 'Atendimentos de Emergência',
+                    data: [10, 20, 15, 30, 25, 35],
+                    borderColor: '#007bff',
+                    backgroundColor: 'rgba(0, 123, 255, 0.2)',
+                    borderWidth: 2
+                }]
+            }
+        });
+        const ctx2 = document.getElementById('chart2').getContext('2d');
+        const chart2 = new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: ['00:00', '06:00', '12:00', '18:00', '24:00'],
+                datasets: [{
+                    label: 'Frequência de Uso',
+                    data: [5, 15, 30, 10, 20],
+                    backgroundColor: '#68cfec'
+                }]
+            }
+        });
+    </script>
+</body>
+</html>

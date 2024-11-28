@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    background: #0D2329;
+    font-family: 'Arial', sans-serif;
+}
+
+.header-page {
+    display: flex;
+    height: 8rem;
+    flex-direction: row;
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 auto;
+    padding: 0.8rem;
+
+}
+ul li a, section a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+   
+}
+
+.logo {
+    margin-left: 2rem;
+    border-radius: 6rem;
+
+}
+.navigation{
+    display:inline-flex;
+    margin: 0 auto;
+    width: 80%;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    column-gap: 2rem;
+}
+
+.navbar a:hover{
+	opacity: 0.50;
+	transition: opacity .30s ease-in-out; 
+}
+
+section {
+    width: 55%;
+    float: right;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 200px;
+    gap: 10px;
+    margin: 7rem 5rem 0 0;
+}
+
+.box {
+    align-content: center;
+    text-align: center;
+    background: #05D3D3;
+    margin: 0 2rem 2rem 0;
+    align-items: flex-end;
+    border-radius: 2rem;    
+    color: #000;
+		width: 80%;
+}
+
+.cards a:hover {
+    color: darkblue;
+}
+
+h1{
+	color: white;
+	font-weight: lighter;
+	display: flex;
+	justify-content: end;
+	margin: 2rem 30rem 0 0;
+	padding: 1rem;
+}
+
+aside {
+    float: left;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #fff;
+		gap: 10px;
+    height: 400px;
+    justify-content: center;
+    margin-top:3rem;
+}
+
+.usr-image {
+	display: flex;
+	gap:0;
+	margin: 0;
+}
+
+.avatarDoc {
+	width: 200px;
+	height: 200px;
+	border-radius: 7rem;
+}
+
+.changImg {
+	font-size: 24px;
+	visibility: hidden;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.usr-image:hover .changImg {
+	visibility: visible;
+	opacity: 0.9;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    width: 100%; 
+    position: fixed; 
+    bottom: 0;  
+    left: 0; 
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    color: #6c757d;
+}

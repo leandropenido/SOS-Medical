@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='pt'>
+    <head>
+        <meta charset='UTF-8' />
+        <meta http-equiv='x-ua-compatible' content='IE=edge' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <link rel='stylesheet' type='text/css' href='style/style.css' />
+        <script defer src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+        <script defer src="src/app.js"></script>
+        <title>SOS Medical</title>
+	</head>
+    <body>
+        <header class='header-page'>
+            <div>
+                <img class='logo' src='img/logo.jpeg' alt='SOS Medical Logo' width='100px' />
+            </div>
+            <nav class='navigation'>
+                <ul class='navbar'>
+                    <li><a href='../Pagina-Inicial/index.html' >Início</a></li>
+                    <li><a href='../Grafico/grafico.html' >Gráfico</a></li>
+                    <li><a href='../Pagina-de-depoimentos/dpo.html' >Depoimentos</a></li>
+                    <li><a href='../fale-conosco/index.html' >Fale conosco</a></li>
+                    <li><a href='../ConsultaExterna/index.html' >Página externa</a></li>
+                </ul>
+            </nav>    
+        </header>
+          <hr />
+         		<div id='main-page'>
+			<div class='main-content'>
+				<div class='greeting-box'>
+					<div id='greeting'>bom dia</div>
+				</div>
+				<div class='text-box'>
+					<label for='username'>Link do Usuário: </label>
+					<input type='text' id='username' name='username' required/>
+					<button id='bttn-id' class='bttn-style' type='button'>Gerar QR Code</button>
+				</div>
+					<div id='qrcode' class='qr-code'></div>
+					<button id='qrcodeDownload' class='bttn-style' disabled>Download do QR Code</button>
+	       <footer>
+         <span class='footer'> &#169; Copyright Todos os direitos reservados. Política de privacidade.</span>
+        </footer>
+        </main>
+    </body>
+</html>

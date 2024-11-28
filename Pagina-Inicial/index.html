@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Conpatible" content="ie=edge">
+    <TItle>SOS MEDICAL</TItle>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header-page">
+        <div>
+            <img src="logo.jpg" alt="" class="logo" width="100px">
+        </div>
+        <nav class="navigation">
+            <ul class="navbar">
+                <li><a href="../Grafico/grafico.html">Gráfico</a></li>
+                <li><a href="../Pagina-de-depoimentos/dpo.html">Depoimentos</a></li>
+                <li><a href="../login/index.html">Login</a></li>
+                <li><a href="../fale-conosco/index.html">Fale conosco</a></li>
+            </ul> 
+    </header>
+    <hr class="divider">
+    <img class="destaque" src="imagem-medico.jpg" alt="">
+    <main>
+        <div class="bloco">
+            <img src="https://naamat.org.br/wp-content/uploads/elementor/thumbs/Clarisse-psai9eee3nikzv4nyxv9pmlykx3v7cncwu2j85cc24.png" alt="Imagem do Médico" class="imagem-depoimento">
+            <h2>Depoimento de Médicos</h2>
+            <p>Recentemente, utilizei um site que centraliza as informações dos pacientes, e fiquei impressionado com a eficiência e a clareza dos dados...</p>
+        </div>
+    
+        <div class="bloco">
+            <img src="https://www.paradaadvogados.com.br/wp-content/uploads/2023/06/img04-300x300.png" alt="Imagem do Paciente" class="imagem-depoimento">
+            <h2>Depoimento de Pacientes</h2>
+            <p>O médico acessou rapidamente um site que centralizava minhas informações de saúde, como meu histórico médico e alergias...</p>
+        </div>
+    </main>
+    <main id="inicio">
+        <!-- Conteúdo da página -->
+    </main>
+    
+    <main id="depoimentos">
+        <!-- Conteúdo dos depoimentos -->
+    </main>
+    <div class="container">
+        <button class="botao-cadastro" id="botaoCadastro">Cadastrar</button>
+    </div>
+    <footer>
+        <p>&copy; Copyright Todos os direitos reservados. Política de Privacidade</a></p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        // Confirmar ação de cadastro
+        document.getElementById("botaoCadastro").addEventListener("click", function() {
+            let confirmacao = confirm("Você deseja se cadastrar?");
+            if (confirmacao) {
+                window.location.href = "../cadastro/index.html"; // Redirecionamento
+            } else {
+                alert("Cadastro cancelado!");
+            }
+        });
+
+        // Mostrar formulário de cadastro
+        document.getElementById("botaoCadastro").addEventListener("click", function() {
+            document.getElementById("formCadastro").style.display = "block";
+        });
+
+        // Submissão do formulário
+        document.getElementById("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Formulário enviado com sucesso!");
+        });
+
+        // Scroll suave para navegação
+        document.querySelectorAll("nav ul li a").forEach(function(link) {
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                const idDestino = link.getAttribute("href");
+                document.querySelector(idDestino).scrollIntoView({
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
+</body>
+</html>

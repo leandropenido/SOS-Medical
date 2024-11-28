@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    background: #0D2329;
+    font-family: 'Arial', sans-serif;
+}
+
+.header-page {
+    display: flex;
+    height: 8rem;
+    flex-direction: row;
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 auto;
+    padding: 0.8rem;
+
+}
+ul li a, section a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+   
+}
+
+.logo {
+    margin-left: 2rem;
+    border-radius: 6rem;
+
+}
+.navigation{
+    display:inline-flex;
+    margin: 0 auto;
+    width: 80%;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    column-gap: 2rem;
+}
+
+.navbar a:hover{
+	opacity: 0.50;
+	transition: opacity .30s ease-in-out; 
+}
+
+#main-page {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.main-content {
+	display: flex;
+	flex-flow: column wrap;
+	background:  #05D3D3;
+	opacity: 0.9;
+	padding: 1em;
+	width: 700px;
+	height: 700px;
+	border: solid 1px #fff;
+	border-radius: 2em;
+	margin-top: 2em;
+}
+
+
+.greeting-box {
+	font-family: 'Arial', serif;
+	font-weight: bold;
+	font-size: 1rem;
+	padding-bottom: 3em;
+	letter-spacing: 0.1em;
+	color: #fff;
+	text-align: center;
+}
+
+.text-box {
+	display: flex;
+	font-family: 'Arial', serif;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: 0.1em;
+	flex-flow: column wrap;
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+#username {
+	margin: 0.5em;
+	padding: 0.5em;
+	border-radius: 2em;
+	border: solid 1px #778899;
+	width: 500px;
+	align-self: center;
+}
+
+input, button {
+	font-family: 'Roboto', serif;
+	font-size: 1em;
+}
+
+.bttn-style {
+	width: 100px;
+	height: 50px;
+	color: #fff;
+	font-size: 0.9rem;
+	align-self: center;
+	letter-spacing: 0.1em;
+	background-color: darkred;
+	border-radius: 2em;
+	border: solid 1px #778899;
+	cursor: pointer;
+}
+
+.qr-code {
+	margin-top: 2em;
+	align-self: center;
+	padding: 1em;
+	width: 290px;
+	height: 290px;
+	background-color: #fff;
+	border-radius: 1em;
+	visibility: hidden;
+}
+
+#qrcodeDownload{
+	margin: 10px;
+	width: 180px;
+	height: 70px;
+	visibility: hidden;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    width: 100%; 
+    position: fixed; 
+    bottom: 0;  
+    left: 0; 
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    color: #6c757d;
+}

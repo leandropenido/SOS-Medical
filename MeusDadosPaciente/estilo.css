@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    background: #0D2329;
+    font-family: 'Arial', sans-serif;
+}
+
+.header-page {
+    display: flex;
+    height: 8rem;
+    flex-direction: row;
+    font-size: 1.5rem;
+    color: #fff;
+    border: solid 1px #000;
+    margin: 0 auto;
+    padding: 0.8rem;
+}
+ul li a, section a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+   
+}
+
+a:hover {
+   opacity: 0.50;
+	transition: opacity .30s ease-in-out;
+
+}
+
+.logo {
+    margin-left: 2rem;
+    border-radius: 6rem;
+
+}
+.navigation{
+    display:inline-flex;
+    margin: 0 auto;
+    width: 80%;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    column-gap: 2rem;
+}
+
+h1{
+    color: white;
+    padding: 40px;
+    font-weight: lighter;
+    text-align: center;
+   
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: sans-serif;
+    gap: 10px; 
+    max-width: 900px; 
+    margin: auto ; 
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+label {
+    width: 30%; 
+    text-align: right; 
+    font-size: 1rem;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    max-width: 600px;
+    padding: 8px;
+    font-size: 1rem;
+    margin-right: 100px;
+    color: black;
+    background-color: white;
+    border-radius: 5px; 
+}
+
+#mensagem {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+button {
+    width: 200x;
+    padding: 10px;
+    margin: 10px auto; 
+    border: none;
+    border-radius: 5px;
+    background-color: #00ff80d2;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    width: 100%; 
+    position: fixed; 
+    bottom: 0;  
+    left: 0; 
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    color: #6c757d;
+}
